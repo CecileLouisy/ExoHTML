@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catégorie</title>
+    <title>Produit</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -19,42 +19,25 @@
     </header>
     <div class="container">
         <div class="ariane">
-            <a href="index.html">Accueil</a> > Catégories
+            <a href="index.html">Accueil</a> > <a href="categorie.html">Catégories</a> > Produit
         </div>
-        <fieldset id="fieldGauche">
-            <legend>Filtre</legend>
-                <label for="filtre">Sélectionnez vos choix</label>
-                
-                    <p>
-                    <input type="checkbox" name="article[]" value="Top1" id="top1">
-                    <label for="top">top</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="jeans" id="jeans">
-                    <label for="jeans">Jeans</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="veste" id="veste">
-                    <label for="veste">Veste</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="chaussures" id="chaussures">
-                    <label for="chaussures">chaussures</label>
-                </p>
-                </select>
-        </fieldset>
-        <fieldset id="fieldDroite">
-            <legend>Produits</legend>
-            <div class="ligne1">
-                <a href="produit.html">Article1</a>
-                <a href="produit.html">Article2</a>
+        <div>
+            <h4>Nom du produit</h4>
+            <div class="photos">
+                <img src="img/chaussures3.jpg" alt="marron">
+                <img src="img/chaussures1.jpg" alt="marronFonce">
+                <img src="img/chaussures2.jpg" alt="marronClair">
             </div>
-            <div class="ligne2">
-                <a href="produit.html">Article3</a>
-                <a href="produit.html">Article4</a>
+            <form>
+                <button type="button">-</button>
+                <input type="text" value="1" class="quantite" name="quantite" id="quantite">
+                <button type="button">+</button>
+                <button type="submit">Ajouter</button>
+            </form>
+            <div>
+                <p>Description</p>
             </div>
-            <div class="ligne3">
-                <a href="produit.html">Article5</a>
-                <a href="produit.html">Article6</a>
-            </div>
-        </fieldset>
+        </div>
     </div>
     <footer>
         <div class="col" id="col1">

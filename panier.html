@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catégorie</title>
+    <title>Panier</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -19,42 +19,41 @@
     </header>
     <div class="container">
         <div class="ariane">
-            <a href="index.html">Accueil</a> > Catégories
+            <a href="index.html">Accueil</a> > Panier
         </div>
-        <fieldset id="fieldGauche">
-            <legend>Filtre</legend>
-                <label for="filtre">Sélectionnez vos choix</label>
+        <div>
+            <form action="paiement.html" method="POST">
+                <table>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Chaussures</td>
+                        <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                        <td>49.99</td>
+                        <td>49.99</td>
+                    </tr>
+                    <tr>
+                        <td>Tunique</td>
+                        <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                        <td>19</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Ceinture</td>
+                        <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                        <td>35</td>
+                        <td>35</td>
+                    </tr>
+                </table>
+                <button type="submit">Paiement</button>
+            </form>
+            
                 
-                    <p>
-                    <input type="checkbox" name="article[]" value="Top1" id="top1">
-                    <label for="top">top</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="jeans" id="jeans">
-                    <label for="jeans">Jeans</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="veste" id="veste">
-                    <label for="veste">Veste</label>
-                    <br>
-                    <input type="checkbox" name="article[]" value="chaussures" id="chaussures">
-                    <label for="chaussures">chaussures</label>
-                </p>
-                </select>
-        </fieldset>
-        <fieldset id="fieldDroite">
-            <legend>Produits</legend>
-            <div class="ligne1">
-                <a href="produit.html">Article1</a>
-                <a href="produit.html">Article2</a>
-            </div>
-            <div class="ligne2">
-                <a href="produit.html">Article3</a>
-                <a href="produit.html">Article4</a>
-            </div>
-            <div class="ligne3">
-                <a href="produit.html">Article5</a>
-                <a href="produit.html">Article6</a>
-            </div>
-        </fieldset>
+        </div>
     </div>
     <footer>
         <div class="col" id="col1">
