@@ -14,6 +14,9 @@
                 <a href="index.html"><li>Accueil</li></a>
                 <a href="categorie.html"><li>Catégories</li></a>
                 <a href="panier.html"><li>Panier</li></a>
+                <a href="inscriptionConnexion.html"><li>Inscription / Connexion</li></a>
+                <a href="espaceClient.html"><li>Espace Client</li></a>
+                <a href="faq.html"><li>FAQ</li></a>
             </ul>
         </nav>
     </header>
@@ -29,9 +32,9 @@
                 <img src="img/chaussures2.jpg" alt="marronClair">
             </div>
             <form>
-                <button type="button">-</button>
+                <button type="button" onclick="calculer('moins')">-</button>
                 <input type="text" value="1" class="quantite" name="quantite" id="quantite">
-                <button type="button">+</button>
+                <button type="button"onclick="calculer('plus')">+</button>
                 <button type="submit">Ajouter</button>
             </form>
             <div>
@@ -63,6 +66,17 @@
             <a href="https://viadeo.journaldunet.com/"><img src="img/viadeo.png" alt="viadeo"></a>
         </div>
     </footer>
-    
+    <script>
+        function calculer (val){
+            let valeur = document.getElementById('quantite').value;
+            if (val=='plus'){
+                valeur++;
+            }else{
+                valeur--;
+                valeur = valeur<1 ? valeur=1 : valeur;
+            }
+            document.getElementById('quantite').value = valeur;
+        }
+    </script>
 </body>
 </html>
