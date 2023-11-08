@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription / Connexion</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" id="logo" alt="logo poussin">
+        <nav>
+            <ul>
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="categorie.html"><li>Catégories</li></a>
+                <a href="panier.html"><li>Panier</li></a>
+                <a href="inscriptionConnexion.html"><li>Inscription / Connexion</li></a>
+                <a href="espaceClient.html"><li>Espace Client</li></a>
+                <a href="faq.html"><li>FAQ</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="ariane">
+            <a href="index.html">Accueil</a> > Inscription / Connexion
+        </div>
+        <div class="login">
+            <form action="espaceClient.html" method="POST">
+                <fieldset>
+                    <legend>Connexion</legend>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="fleur.simone@gmail.com" required>
+                    <br>
+                    <label for="motDePasse">Mot de passe :</label>
+                    <input type="password" name="motdepasse" id="motdepasse" required>
+                </fieldset>
+                    <button type="submit" name="submit">Connexion</button>
+            </form>
+        </div>
+        <div class="signIn">
+            <form action="espaceClient.html" method="POST">
+                <fieldset>
+                    <legend>Inscription</legend>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre Nom" required>
+                    <br>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required>
+                    <br>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="fleur.simone@gmail.com" required>
+                    <br>
+                    <label for="motDePasse">Mot de passe :</label>
+                    <input type="password" name="motdepasse" id="motdepassei1" required>
+                    <br>
+                    <label for="motDePasse">Répéter mot de passe :</label>
+                    <input type="password" name="motdepasse" id="motdepassei2" required>
+                    <br>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse" placeholder="N° et Rue" required>
+                    <br>
+                    <label for="cp">Code postal :</label>
+                    <input type="number" size="5" min="01000" max="97400" required>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville" required>
+                    <br>
+                    <label for="pays">Pays :</label>
+                    <input type="text" name="pays" id="pays" required>
+                    <br>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" name="telephone" id="telephone" maxlength="10" required>
+                    <br>
+                </fieldset>
+                    <button type="submit" name="submit">Inscription</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="col" id="col1">
+            <address>
+                <p>M. J'achète</p>
+                <p>Rue de la paix</p>
+                <p>18000 Bourges</p>
+                <p>Tel : <a href="tel:0606060606">0606060606</a></p>
+                <p>Email : <a href="mailto:contactentreprise.com">contactentreprise.com</a></p>
+            </address>
+        </div>
+        <div class="col" id="col2">
+            <nav>
+                <ul>
+                    <li><a href="cgv.html">CGV</a></li>
+                    <li><a href="mentions.html">Mentions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col" id="col3">
+            <a href="https://www.linkedin.com/"><img src="img/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.jpg" alt="instagram"></a>
+            <a href="https://viadeo.journaldunet.com/"><img src="img/viadeo.png" alt="viadeo"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
