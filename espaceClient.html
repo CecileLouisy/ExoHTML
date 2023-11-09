@@ -24,9 +24,72 @@
         <div class="ariane">
             <a href="index.html">Accueil</a> > Espace Client
         </div>
-        <div class="menuEC">compte-commande-faq</div>
-        <div>compte</div>
-        <div>commande</div>
+        <div class="menuGauche">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#compte">Compte</a></li>
+                    <li><a href="#commandes">Commande</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="compte">
+            <form action="espaceClient.html" method="POST">
+                <fieldset>
+                    <legend>Mes informations</legend>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" value="Simone" readonly>
+                    <br>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" value="Fleur" readonly>
+                    <br>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" value="fleur.simone@gmail.com" required>
+                    <br>
+                    <label for="motDePasse">Mot de passe :</label>
+                    <input type="password" name="motdepasse" id="motdepassei1" value="**********" required>
+                    <br>
+                    <label for="motDePasse">Répéter mot de passe :</label>
+                    <input type="password" name="motdepasse" id="motdepassei2" value="**********" required>
+                    <br>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse" value="11 rue des petits pedestres" required>
+                    <br>
+                    <label for="cp">Code postal :</label>
+                    <input type="number" size="5" min="01000" max="97400" value="18000" required>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville" value="Bourges" required>
+                    <br>
+                    <label for="pays">Pays :</label>
+                    <input type="text" name="pays" id="pays" value="France" required>
+                    <br>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" name="telephone" id="telephone" maxlength="10" value="0601020304" required>
+                    <br>
+                </fieldset>
+                    <button type="submit" name="submit">Modifier</button>
+            </form>
+        </div>
+        <div id="commandes">
+            <h2>Commandes</h2>
+            <table>
+                <tr>
+                    <th>Numéro de commande</th>
+                    <th>Statut</th>
+                    <th>Numéro de suivi de colis</th>
+                </tr>
+                <tr>
+                    <td>423</td>
+                    <td>En cours de préparation</td>
+                    <td>A venir</td>
+                </tr>
+                <tr>
+                    <td>198</td>
+                    <td>Livré</td>
+                    <td>02365897</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <footer>
         <div class="col" id="col1">
