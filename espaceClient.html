@@ -27,7 +27,7 @@
             <a href="index.html">Accueil</a> > Espace Client
         </div>
         <div class="menuGauche">
-            <nav role="navigation">
+            <nav>
                 <ul>
                     <li><a href="#compte">Compte</a></li>
                     <li><a href="#commandes">Commande</a></li>
@@ -48,17 +48,17 @@
                     <label for="email">Email :</label>
                     <input type="email" name="email" id="email" value="fleur.simone@gmail.com" required>
                     <br>
-                    <label for="motDePasse">Mot de passe :</label>
+                    <label for="motdepassei1">Mot de passe :</label>
                     <input type="password" name="motdepasse" id="motdepassei1" value="**********" required>
                     <br>
-                    <label for="motDePasse">Répéter mot de passe :</label>
+                    <label for="motdepassei2">Répéter mot de passe :</label>
                     <input type="password" name="motdepasse" id="motdepassei2" value="**********" required>
                     <br>
                     <label for="adresse">Adresse :</label>
                     <input type="text" name="adresse" id="adresse" value="11 rue des petits pedestres" required>
                     <br>
                     <label for="cp">Code postal :</label>
-                    <input type="number" size="5" min="01000" max="97400" value="18000" required>
+                    <input type="number" id="cp" name="cp" min="01000" max="97400" value="18000" required>
                     <label for="ville">Ville :</label>
                     <input type="text" name="ville" id="ville" value="Bourges" required>
                     <br>
@@ -74,7 +74,7 @@
         </div>
         <div id="commandes">
             <h2>Commandes</h2>
-            <table border="2" cellspacing="5">
+            <table>
                 <tr>
                     <th>Numéro de commande</th>
                     <th>Statut</th>
